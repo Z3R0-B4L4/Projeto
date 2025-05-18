@@ -153,6 +153,7 @@ footer {
   flex-wrap: wrap;
   gap: 20px;
   text-align: left;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -215,7 +216,7 @@ footer {
 }
 
 /* Responsividade */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .intro-conteudo {
     flex-direction: column;
     align-items: center;
