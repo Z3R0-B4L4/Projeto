@@ -221,11 +221,13 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    flex-wrap: nowrap;
   }
 
   .importancia-conteudo {
     flex-direction: column;
     text-align: center;
+    flex-wrap: nowrap;
   }
 
   .importancia-texto {
@@ -241,6 +243,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    flex-wrap: nowrap;
   }
 
   .dicas-texto {
@@ -255,6 +258,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    flex-wrap: nowrap;
   }
 
   .intro-texto,
