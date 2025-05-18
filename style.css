@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fonte divertida para crianças */
+body {
+  font-family: 'Comic Neue', sans-serif;
+  background-color: #fff8e1;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #ffcc80;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #5d4037;
+  font-weight: bold;
+}
+
+/* Main padding */
+main {
+  padding: 20px;
+}
+
+/* Seções gerais */
+section.intro,
+section.importancia,
+section.dicas,
+section.formulario {
+  background-color: #ffe0b2;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Lista sem estilo padrão */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Dicas com ícones */
+section.dicas ul li::before {
+  content: "🍏 ";
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #ffb74d;
+  border-radius: 5px;
+  font-size: 1em;
+  resize: vertical;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+#mensagem {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* Rodapé */
+footer {
+  background-color: #ffcc80;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Animação suave ao carregar seção */
+.animated-section {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Intro - layout flexível */
+.intro-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.intro-animacao {
+  flex: 0 0 auto;
+}
+
+.intro-texto {
+  flex: 1 1 300px;
+}
+
+/* Importância da alimentação */
+.importancia {
+  background-color: #e0f7fa;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.importancia-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.importancia-texto {
+  flex: 1 1 300px;
+}
+
+.importancia-texto h2 {
+  color: #00695c;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.importancia-texto p {
+  font-size: 18px;
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+.importancia-texto ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
+  margin: 0;
+}
+
+.importancia-texto li {
+  margin-bottom: 8px;
+}
+
+/* Deixa a animação fixa a um tamanho */
+.importancia-animacao {
+  flex: 0 0 auto;
+}
+
+/* Seção dicas */
+.dicas h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.dicas ul li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.dicas-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dicas-animacao {
+  flex: 0 0 auto;
+}
+
+.dicas-texto {
+  flex: 1 1 300px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .intro-conteudo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .importancia-conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .importancia-texto {
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px 5px;
+  }
+
+  .dicas-conteudo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dicas-texto {
+    text-align: center;
+  }
+}
