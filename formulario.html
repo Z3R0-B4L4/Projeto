@@ -7,33 +7,108 @@
 </head>
 <body>
   <header>
-    <h1>📩 Envie sua Pergunta!</h1>
+    <h1>📩 Quiz!</h1>
     <nav>
       <a href="index.html">Início</a>
-      <a href="formulario.html">Perguntas</a>
+      <a href="formulario.html">Quiz</a>
     </nav>
   </header>
-
   <main>
-    <section class="formulario">
-      <form id="perguntaForm">
-        <label for="nome">Seu nome:</label>
-        <input type="text" id="nome" name="nome" required />
+    <section class="quiz">
+      <form id="quizForm">
+        <div class="pergunta">
+          <p>1. Qual desses alimentos é mais saudável para o lanche da escola?</p>
+          <label><input type="radio" name="q1" value="A"> 🍟 A) Batata frita</label><br>
+          <label><input type="radio" name="q1" value="B"> 🍎 B) Maçã</label><br>
+          <label><input type="radio" name="q1" value="C"> 🍬 C) Bala</label><br>
+          <label><input type="radio" name="q1" value="D"> 🥤 D) Refrigerante</label>
+          <p class="explicacao" id="exp1"></p>
+        </div>
 
-        <label for="pergunta">Sua pergunta sobre alimentação:</label>
-        <textarea id="pergunta" name="pergunta" rows="4" required></textarea>
+        <div class="pergunta">
+          <p>2. Quantos copos de água devemos beber por dia, em média?</p>
+          <label><input type="radio" name="q2" value="A"> 🥛 A) 1 copo</label><br>
+          <label><input type="radio" name="q2" value="B"> 🥤 B) 3 copos</label><br>
+          <label><input type="radio" name="q2" value="C"> 💧 C) 6 a 8 copos</label><br>
+          <label><input type="radio" name="q2" value="D"> 🍹 D) Nenhum, só suco já basta</label>
+          <p class="explicacao" id="exp2"></p>
+        </div>
 
-        <button type="submit">Enviar</button>
+        <div class="pergunta">
+          <p>3. Qual desses alimentos faz parte do grupo das verduras?</p>
+          <label><input type="radio" name="q3" value="A"> 🍚 A) Arroz</label><br>
+          <label><input type="radio" name="q3" value="B"> 🥬 B) Alface</label><br>
+          <label><input type="radio" name="q3" value="C"> 🍞 C) Pão</label><br>
+          <label><input type="radio" name="q3" value="D"> 🥛 D) Leite</label>
+          <p class="explicacao" id="exp3"></p>
+        </div>
+
+        <div class="pergunta">
+          <p>4. Por que devemos comer frutas todos os dias?</p>
+          <label><input type="radio" name="q4" value="A"> 🌈 A) Porque são coloridas</label><br>
+          <label><input type="radio" name="q4" value="B"> 😋 B) Porque são gostosas</label><br>
+          <label><input type="radio" name="q4" value="C"> 🍊 C) Porque têm vitaminas importantes para o corpo</label><br>
+          <label><input type="radio" name="q4" value="D"> 🍭 D) Porque são doces</label>
+          <p class="explicacao" id="exp4"></p>
+        </div>
+
+        <div class="pergunta">
+          <p>5. O que acontece se comermos muito doce todos os dias?</p>
+          <label><input type="radio" name="q5" value="A"> 💪 A) Ficamos mais fortes</label><br>
+          <label><input type="radio" name="q5" value="B"> 🤷 B) Nada acontece</label><br>
+          <label><input type="radio" name="q5" value="C"> 🦷 C) Podemos ter cáries e engordar</label><br>
+          <label><input type="radio" name="q5" value="D"> 😴 D) Dormimos melhor</label>
+          <p class="explicacao" id="exp5"></p>
+        </div>
+
+        <div class="pergunta">
+          <p>6. Qual é a melhor bebida para matar a sede?</p>
+          <label><input type="radio" name="q6" value="A"> 🧃 A) Suco de caixinha</label><br>
+          <label><input type="radio" name="q6" value="B"> 🥤 B) Refrigerante</label><br>
+          <label><input type="radio" name="q6" value="C"> 💧 C) Água</label><br>
+          <label><input type="radio" name="q6" value="D"> 🍫 D) Achocolatado</label>
+          <p class="explicacao" id="exp6"></p>
+        </div>
+
+        <div class="pergunta">
+          <p>7. Qual dessas atitudes ajuda a ter uma alimentação saudável?</p>
+          <label><input type="radio" name="q7" value="A"> 📺 A) Comer assistindo TV</label><br>
+          <label><input type="radio" name="q7" value="B"> 🍭 B) Comer muitas guloseimas</label><br>
+          <label><input type="radio" name="q7" value="C"> 🥗 C) Comer frutas e verduras todos os dias</label><br>
+          <label><input type="radio" name="q7" value="D"> ⏰ D) Pular o café da manhã</label>
+          <p class="explicacao" id="exp7"></p>
+        </div>
       </form>
-
-      <div id="mensagem"></div>
     </section>
   </main>
+  <!-- qual o erro na linha 105? -->
 
-  <footer>
-    <p>🌽 Educação Alimentar © 2025</p>
-  </footer>
+  <script>
+  const respostas = {
+    q1: { correta: 'B', explicacao: 'A maçã é uma fruta rica em fibras e vitaminas, ideal para um lanche saudável.' },
+    q2: { correta: 'C', explicacao: 'Beber de 6 a 8 copos de água por dia mantém nosso corpo bem hidratado.' },
+    q3: { correta: 'B', explicacao: 'Alface é uma verdura, importante para a nossa alimentação por conter fibras e vitaminas.' },
+    q4: { correta: 'C', explicacao: 'As frutas contêm vitaminas importantes para o funcionamento do corpo.' },
+    q5: { correta: 'C', explicacao: 'Doces em excesso causam cáries e podem levar ao ganho de peso.' },
+    q6: { correta: 'C', explicacao: 'A água é a melhor bebida para matar a sede e manter o corpo saudável.' },
+    q7: { correta: 'C', explicacao: 'Comer frutas e verduras diariamente ajuda a manter uma alimentação equilibrada.' }
+  };
 
-  <script src="script.js"></script>
+  document.querySelectorAll('input[type=radio]').forEach(input => {
+    input.addEventListener('change', () => {
+      const questao = input.name;
+      const explicacao = document.getElementById(`exp${questao.substring(1)}`);
+
+      if (input.value === respostas[questao].correta) {
+        explicacao.textContent = "Resposta correta! " + respostas[questao].explicacao;
+        explicacao.className = "explicacao correta";
+      } else {
+        explicacao.textContent = `Errado. A resposta correta é a letra ${respostas[questao].correta}. ${respostas[questao].explicacao}`;
+        explicacao.className = "explicacao errada";
+      }
+    });
+  });
+</script>
+
 </body>
 </html>

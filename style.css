@@ -98,6 +98,27 @@ button:hover {
   color: #2e7d32;
 }
 
+.quiz {
+  background-color: #ffe0b2;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.pergunta {
+  margin-bottom: 15px;
+}
+.explicacao {
+  margin-top: 5px;
+  font-style: italic;
+  color: #2e7d32;
+}
+.correta {
+  color: green;
+}
+.errada {
+  color: red;
+}
+
 /* Rodapé */
 footer {
   background-color: #ffcc80;
@@ -249,6 +270,37 @@ footer {
   .dicas-texto {
     text-align: center;
   }
+
+  @media (max-width: 600px) {
+    header {
+      padding: 15px;
+    }
+
+    header h1 {
+      font-size: 1.4em;
+    }
+
+    main {
+      padding: 10px;
+    }
+
+    .quiz {
+      padding: 15px;
+    }
+
+    .pergunta p {
+      font-size: 1em;
+    }
+
+    label {
+      font-size: 0.95em;
+    }
+
+    .explicacao {
+      font-size: 0.9em;
+    }
+  }
+
 }
 
 @media (max-width: 1100px) {
@@ -280,7 +332,6 @@ footer {
   .importancia-animacao,
   .dicas-animacao,
   .intro-animacao {
-    margin: 0 auto;
-  }
+    margin:0 auto;
+ }
 }
-
