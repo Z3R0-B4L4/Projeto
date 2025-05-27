@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>Perguntas e Respostas</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </head>
 <body>
   <header>
@@ -18,69 +19,196 @@
       <form id="quizForm">
         <div class="pergunta">
           <p>1. Qual desses alimentos é mais saudável para o lanche da escola?</p>
-          <label><input type="radio" name="q1" value="A"> 🍟 A) Batata frita</label><br>
-          <label><input type="radio" name="q1" value="B"> 🍎 B) Maçã</label><br>
-          <label><input type="radio" name="q1" value="C"> 🍬 C) Bala</label><br>
-          <label><input type="radio" name="q1" value="D"> 🥤 D) Refrigerante</label>
-          <p class="explicacao" id="exp1"></p>
+          <div class="alternativas">
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/b6f2333e-58e4-4179-b994-eb1724c96239/jz5Dk0MyMh.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q1" value="A"> 🍟 A) Batata frita</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/eb84b381-598a-4061-b45b-0e8267a89453/OzXQzzHX82.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q1" value="B"> 🍎 B) Maçã</label>
+            </div>  
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/d3b25e5f-3232-4c2f-adb1-c4c629399cea/2tg8SYKguF.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q1" value="C"> 🍭 C) Pirulito</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/059c4b2c-f6eb-4719-b217-b1e91bdaa483/F3aGk6bN0P.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q1" value="D"> 🥤 D) Refrigerante</label>
+            </div>
+          </div>  
         </div>
+        <p class="explicacao" id="exp1"></p>
+      </div>
 
         <div class="pergunta">
           <p>2. Quantos copos de água devemos beber por dia, em média?</p>
-          <label><input type="radio" name="q2" value="A"> 🥛 A) 1 copo</label><br>
-          <label><input type="radio" name="q2" value="B"> 🥤 B) 3 copos</label><br>
-          <label><input type="radio" name="q2" value="C"> 💧 C) 6 a 8 copos</label><br>
-          <label><input type="radio" name="q2" value="D"> 🍹 D) Nenhum, só suco já basta</label>
+          <div class="alternativas">
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/d969a54b-6801-43f9-9e67-5c0b7a6d8efa/dAdg5F5PDa.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q2" value="A"> 🥛 A) 1 copo</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/79747b3f-396b-4fea-b1eb-fe9e6b0f4582/Ih62mK0SLJ.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q2" value="B"> 🥤 B) 3 copos</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/c26eb161-f810-4537-ab74-891db7dd0cf1/R4M0B5XHUc.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q2" value="C"> 💧 C) 6 a 8 copos</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/bba002e1-6acf-4850-b4cd-473b97729d79/6i7QURwVtP.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q2" value="D"> 🍹 D) Nenhum, só suco já basta</label>
+            </div>
+          </div>  
           <p class="explicacao" id="exp2"></p>
         </div>
 
         <div class="pergunta">
           <p>3. Qual desses alimentos faz parte do grupo das verduras?</p>
-          <label><input type="radio" name="q3" value="A"> 🍚 A) Arroz</label><br>
-          <label><input type="radio" name="q3" value="B"> 🥬 B) Alface</label><br>
-          <label><input type="radio" name="q3" value="C"> 🍞 C) Pão</label><br>
-          <label><input type="radio" name="q3" value="D"> 🥛 D) Leite</label>
+          <div class="alternativas">
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/cd74298f-2883-44ee-8d9b-746b2cf06e34/LTOzvV9d9A.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q3" value="A"> 🍚 A) Arroz</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/b278540e-0cbe-4dcc-898e-493f1cec7faa/QvRpyEcMqq.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q3" value="B"> 🥬 B) Alface</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/77e7f313-e55e-4c9a-bd2a-e282bcd8ef85/152XXrRZMj.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q3" value="C"> 🍞 C) Pão</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/e0b0cb41-b2e1-45f0-8494-ae2ac9fcf1bd/ILuuxgydWi.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q3" value="D"> 🥛 D) Leite</label>
+            </div>
+          </div>
           <p class="explicacao" id="exp3"></p>
         </div>
 
         <div class="pergunta">
           <p>4. Por que devemos comer frutas todos os dias?</p>
-          <label><input type="radio" name="q4" value="A"> 🌈 A) Porque são coloridas</label><br>
-          <label><input type="radio" name="q4" value="B"> 😋 B) Porque são gostosas</label><br>
-          <label><input type="radio" name="q4" value="C"> 🍊 C) Porque têm vitaminas importantes para o corpo</label><br>
-          <label><input type="radio" name="q4" value="D"> 🍭 D) Porque são doces</label>
+          <div class="alternativas">
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/cbeff084-fcf7-4ff2-9c56-7ea439b6515a/BCBVo60pFl.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q4" value="A"> 🌈 A) Porque são coloridas</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/9df73500-9825-4629-be55-d640b2ec504b/tADTsHZejP.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q4" value="B"> 😋 B) Porque são gostosas</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/4aed0cb9-9cb7-4708-b5b5-97edf2a58efb/R0CQt9ISWm.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q4" value="C"> 🍊 C) Porque têm vitaminas importantes para o corpo</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/72b69a70-021f-40d2-9607-3f9a3b5cde76/MhYF5ybqHe.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q4" value="D"> 🍭 D) Porque são doces</label>
+            </div>
+          
+          </div>
           <p class="explicacao" id="exp4"></p>
         </div>
 
         <div class="pergunta">
           <p>5. O que acontece se comermos muito doce todos os dias?</p>
-          <label><input type="radio" name="q5" value="A"> 💪 A) Ficamos mais fortes</label><br>
-          <label><input type="radio" name="q5" value="B"> 🤷 B) Nada acontece</label><br>
-          <label><input type="radio" name="q5" value="C"> 🦷 C) Podemos ter cáries e engordar</label><br>
-          <label><input type="radio" name="q5" value="D"> 😴 D) Dormimos melhor</label>
+          <div class="alternativas">
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/2d51cd44-8d66-4bf9-8fca-fc2b307c11bf/uRV8vwIVT0.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q5" value="A"> 💪 A) Ficamos mais fortes</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/0c7ae513-7484-42ca-90ab-18c0dd9493b0/aePwNtUFLh.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q5" value="B"> 🤷 B) Nada acontece</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/65ead001-71bd-4ec7-956d-1f2a9e5b6ea2/JcKxXEwwSL.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q5" value="C"> 🦷 C) Podemos ter cáries e engordar</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/176f54e2-3411-47eb-8606-63c8934086ee/QguomKsOaf.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q5" value="D"> 😴 D) Dormimos melhor</label>
+            </div>
+          </div>
+
           <p class="explicacao" id="exp5"></p>
         </div>
 
         <div class="pergunta">
           <p>6. Qual é a melhor bebida para matar a sede?</p>
-          <label><input type="radio" name="q6" value="A"> 🧃 A) Suco de caixinha</label><br>
-          <label><input type="radio" name="q6" value="B"> 🥤 B) Refrigerante</label><br>
-          <label><input type="radio" name="q6" value="C"> 💧 C) Água</label><br>
-          <label><input type="radio" name="q6" value="D"> 🍫 D) Achocolatado</label>
+          <div class="alternativas">
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/68031a7e-0fb4-4417-a0d0-7af0bf038312/vso2vjJzu5.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q6" value="A"> 🧃 A) Suco de caixinha</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/059c4b2c-f6eb-4719-b217-b1e91bdaa483/F3aGk6bN0P.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q6" value="B"> 🥤 B) Refrigerante</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/79747b3f-396b-4fea-b1eb-fe9e6b0f4582/Ih62mK0SLJ.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q6" value="C"> 💧 C) Água</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/b2c2abdc-7694-4585-8c73-7c36451d0743/ZKvqk8zbCB.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q6" value="D"> 🍫 D) Achocolatado</label>
+            </div>
+          </div>
+          
           <p class="explicacao" id="exp6"></p>
         </div>
 
         <div class="pergunta">
           <p>7. Qual dessas atitudes ajuda a ter uma alimentação saudável?</p>
-          <label><input type="radio" name="q7" value="A"> 📺 A) Comer assistindo TV</label><br>
-          <label><input type="radio" name="q7" value="B"> 🍭 B) Comer muitas guloseimas</label><br>
-          <label><input type="radio" name="q7" value="C"> 🥗 C) Comer frutas e verduras todos os dias</label><br>
-          <label><input type="radio" name="q7" value="D"> ⏰ D) Pular o café da manhã</label>
+          <div class="alternativas">
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/a6049450-c012-4969-8307-bdaee9ed3ca0/7CgImWNqb4.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q7" value="A"> 📺 A) Comer assistindo TV</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/72b69a70-021f-40d2-9607-3f9a3b5cde76/MhYF5ybqHe.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q7" value="B"> 🍭 B) Comer muitos doces</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/4aed0cb9-9cb7-4708-b5b5-97edf2a58efb/R0CQt9ISWm.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q7" value="C"> 🥗 C) Comer frutas e verduras todos os dias</label>
+            </div>
+
+            <div class="alternativa">
+              <dotlottie-player src="https://lottie.host/06c634dd-0068-4e1c-ad05-9668959044cf/Bk4QVwQVlt.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+              <label><input type="radio" name="q7" value="D"> ⏰ D) Pular o café da manhã</label>
+            </div>
+          </div>
+          
           <p class="explicacao" id="exp7"></p>
         </div>
       </form>
     </section>
   </main>
+
+  <footer>
+    <p>🌽 Educação Alimentar © 2025</p>
+  </footer>
 
   <script>
   const respostas = {

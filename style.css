@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/* Fonte divertida para crianças */
 body {
   font-family: 'Comic Neue', sans-serif;
   background-color: #fff8e1;
@@ -47,6 +46,12 @@ section.formulario {
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+p a{
+  text-decoration: none;
+  color: #5d4037;
+  font-weight: bold;
 }
 
 /* Lista sem estilo padrão */
@@ -236,8 +241,33 @@ footer {
   flex: 1 1 300px;
 }
 
+.alternativas{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.alternativa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
 /* Responsividade */
 @media (max-width: 600px) {
+  .alternativa {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .alternativa lottie-player {
+    width: 40px;
+    height: 40px;
+  }
+  
   .intro-conteudo {
     flex-direction: column;
     align-items: center;
